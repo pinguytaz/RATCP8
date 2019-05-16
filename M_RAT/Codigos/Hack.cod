@@ -1,0 +1,8 @@
+window = Tk()
+window.geometry('444x44')
+window.title("Validación de Hackeado")
+tiempo = datetime.datetime.now()
+texto = "Hoy " +str(tiempo.day)+"/"+str(tiempo.month)+"/"+str(tiempo.year)+" a las "+str(tiempo.hour)+":"+str(tiempo.minute)+":"+str(tiempo.second)+" su sistema ha sido comprometido"
+lbl = Label(window, text=texto)
+lbl.grid(column=0, row=0)
+window.mainloop()
